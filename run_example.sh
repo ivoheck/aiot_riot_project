@@ -1,0 +1,1 @@
+CFLAGS+="-DCONFIG_IEEE802154_DEFAULT_CHANNEL=15 -DCONFIG_GNRC_IPV6_NIB_SLAAC=1" BOARD=adafruit-feather-nrf52840-sense make -C coap_example all flash term
