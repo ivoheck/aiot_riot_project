@@ -7,7 +7,7 @@ APPLICATION = gcoap_example
 BOARD ?= native
 
 # This has to be the absolute path to the RIOT base directory:
-RIOTBASE ?= $(CURDIR)/../../../..
+RIOTBASE ?= $(CURDIR)/RIOT
 
 # Include packages that pull up and auto-init the link layer.
 # NOTE: 6LoWPAN will be included if IEEE802.15.4 devices are present
@@ -53,6 +53,8 @@ USEMODULE += shell
 USEMODULE += shell_cmds_default
 USEMODULE += uri_parser
 USEMODULE += ps
+
+USEMODULE += saul_default
 
 # /rtc resource for regular observe notifications
 FEATURES_OPTIONAL += periph_rtc
